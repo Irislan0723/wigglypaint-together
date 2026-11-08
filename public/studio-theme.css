@@ -1,0 +1,22 @@
+:root {
+  color-scheme: light;
+  --bg:#f8f4eb;
+  --bg-card:#fffaf1;
+  --bg-secondary:#f0e6d6;
+  --text:#32281e;
+  --text-mid:#5e4d3a;
+  --text-secondary:#6b5b4a;
+  --text-light:#715f4b;
+  --border:#d8c5aa;
+  --accent:#725232;
+  --accent-mid:#845933;
+  --accent-pale:#eddfcb;
+  --accent-contrast:#fff;
+  --error:#a23734;
+  --font-cn:system-ui,sans-serif;
+  --font-en:Georgia,serif;
+  --font-d:var(--font-en);
+  --shadow-sm:0 3px 12px #50361215;
+  --shadow-md:0 8px 22px #50361222;
+}
+.paint-page dialog{background:var(--bg-card);color:var(--text)}

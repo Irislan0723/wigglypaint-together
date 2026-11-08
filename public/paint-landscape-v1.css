@@ -1,0 +1,10 @@
+.paint-focus-close{position:absolute;z-index:25;top:8px;right:12px;display:grid;place-items:center;width:32px;height:32px;padding:6px;border:1px solid #d9bf98;border-radius:50%;background:#f7e8cc;color:#403325!important;box-shadow:0 2px 8px #0002;cursor:pointer}
+.paint-focus-close[hidden]{display:none!important}
+.paint-page.paint-landscape{overflow:hidden!important}
+.paint-landscape .paint-room{position:fixed!important;left:50%!important;top:50%!important;width:var(--paint-focus-width)!important;height:var(--paint-focus-height)!important;min-height:0!important;margin:0!important;padding:8px!important;gap:8px!important;transform:translate(-50%,-50%);background:var(--bg);isolation:isolate}
+.paint-landscape-portrait .paint-room{transform:translate(-50%,-50%) rotate(90deg)}
+/* The original site fills the landscape view; the studio frame stays hidden. */
+.paint-landscape :is(.top-bar,.paint-heading,.paint-credit,.paint-dock,.paint-easel-art,.paint-easel-supports,.paint-footer){display:none!important}
+.paint-landscape .paint-workspace{width:100%!important;max-width:none!important;min-height:0!important;padding:0!important;flex:1!important}
+.paint-landscape .paint-easel{width:var(--paint-landscape-board-width)!important;height:var(--paint-landscape-board-height)!important;max-width:none!important;margin:0!important;aspect-ratio:512/342!important}
+.paint-landscape .paint-stage{inset:0!important;width:100%!important;height:100%!important;aspect-ratio:auto!important;border:0!important;border-radius:5px!important;outline:0!important;box-shadow:none!important}

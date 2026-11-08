@@ -1,0 +1,11 @@
+{
+  "name": "wigglypaint-together",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "An independent local WigglyPaint studio and shared canvas with an optional AI tool adapter",
+  "license": "MIT",
+  "engines": { "node": ">=22" },
+  "scripts": { "start": "node --env-file-if-exists=.env server.js", "test": "node --test" },
+  "dependencies": { "express": "5.2.1" }
+}

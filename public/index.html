@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Paint Together · 画室与一起画</title>
+<link rel="stylesheet" href="studio-theme.css">
+<link rel="stylesheet" href="shell.css">
+<script type="module" src="shell.js"></script>
+</head>
+<body>
+<header class="app-head">
+  <div><strong>Paint Together</strong><p>WigglyPaint 的独立画室扩展</p></div>
+  <nav aria-label="画室导航">
+    <button id="studio" type="button" aria-pressed="true">画室</button>
+    <button id="together" type="button" aria-pressed="false">一起画</button>
+  </nav>
+</header>
+<main>
+  <section class="workspace" aria-label="画室">
+    <iframe id="studio-frame" title="绘画工作区"></iframe>
+  </section>
+  <section id="partner" class="partner" aria-label="一起画对话" hidden>
+    <h1>一起画</h1>
+    <p id="mode" role="status">正在连接本地画室</p>
+    <button id="invite" type="button">发出一起画邀请</button>
+    <ol id="messages" aria-live="polite"></ol>
+    <form id="prompt">
+      <label for="text">想一起画什么？</label>
+      <textarea id="text" rows="2" maxlength="1000" required></textarea>
+      <button type="submit">发送</button>
+    </form>
+    <p id="feedback" role="status"></p>
+  </section>
+</main>
+<footer><a href="https://internet-janitor.itch.io/wigglypaint" target="_blank" rel="noopener noreferrer">原版 WigglyPaint · John Earnest</a> · <a href="vendor/wigglypaint/LICENSE.txt">上游许可</a></footer>
+</body>
+</html>
